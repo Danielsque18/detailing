@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add("js")</script>
+  <title>Lucido — детейлинг-ателье в Омске</title>
+  <meta name="description" content="Полировка, керамика и уход за салоном. Одна машина в день, замер лака на каждой детали, свет 6500 K. Омск.">
+  <meta property="og:title" content="Lucido — детейлинг-ателье в Омске">
+  <meta property="og:description" content="Одна машина в день. Полировка, керамика и уход за салоном.">
+  <meta property="og:image" content="img/f8.jpg">
+  <meta name="theme-color" content="#f2eee6">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%2316120e'/><text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='36' fill='%23f2eee6'>L</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Заставка ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <p class="loader__word" id="loaderWord">Lucido</p>
+    <span class="loader__line"><i id="loaderLine"></i></span>
+    <p class="loader__note">Детейлинг-ателье, Омск</p>
+  </div>
+
+  <!-- свой курсор (только для мыши) -->
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-scroll>Lucido</a>
+    <nav class="nav__links" aria-label="Разделы">
+      <a href="#services" data-scroll>Услуги</a>
+      <a href="#light" data-scroll>Свет</a>
+      <a href="#process" data-scroll>Процесс</a>
+      <a href="#prices" data-scroll>Стоимость</a>
+    </nav>
+    <a href="#booking" class="nav__cta" data-scroll>Записаться</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Первый экран ============ -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__frame" id="heroFrame">
+        <img class="hero__img" id="heroImg" src="img/f8.jpg" alt="Красный Ferrari F8 на бетонной площадке" fetchpriority="high">
+        <div class="hero__shade"></div>
+
+        <p class="hero__kicker">Детейлинг-ателье в Омске</p>
+
+        <div class="hero__aside">
+          <p>Полировка, керамика и уход за салоном. Берём одну машину в день и отдаём её в состоянии, которое не стыдно показать при дневном свете.</p>
+          <a href="#booking" class="btn btn--ivory" data-scroll data-magnetic>Записаться на осмотр</a>
+        </div>
+
+        <h1 class="hero__word" id="heroTitle" aria-label="Lucido">Lucido</h1>
+      </div>
+    </section>
+
+    <!-- ============ Манифест ============ -->
+    <section class="manifest" aria-label="О нас">
+      <p class="manifest__text" id="manifest">Мы берём в работу одну машину в день. Этого времени хватает, чтобы замерить лак на каждой детали, исправить его при правильном свете и вернуть автомобиль таким, каким его задумали на заводе.</p>
+
+      <ul class="figures">
+        <li><strong>1</strong><span>автомобиль в день, без потока и очереди в боксе</span></li>
+        <li><strong>6500 K</strong><span>свет в рабочем боксе: при нём видна каждая паутинка</span></li>
+        <li><strong>48 ч</strong><span>выдержка керамики в тёплом боксе перед выдачей</span></li>
+      </ul>
+
+      <div class="editorial">
+        <figure class="editorial__a" data-parallax="-12">
+          <div class="mask"><img src="img/red-macro.jpg" alt="Красный лак крупным планом" loading="lazy"></div>
+          <figcaption>Цвет, который возвращается после полировки, а не перекраса</figcaption>
+        </figure>
+        <figure class="editorial__b" data-parallax="10">
+          <div class="mask"><img src="img/hood.jpg" alt="Отражение в тёмном лаке капота" loading="lazy"></div>
+          <figcaption>Отражение без голограмм. Так выглядит лак после трёх этапов</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Услуги ============ -->
+    <section class="services" id="services" aria-labelledby="servicesTitle">
+      <div class="section-head section-head--dark">
+        <h2 class="title" id="servicesTitle">Что мы делаем</h2>
+        <p>Четыре направления. Можно взять одно, можно собрать полный цикл из пакетов ниже.</p>
+      </div>
+
+      <div class="stack">
+        <article class="svc">
+          <div class="svc__body">
+            <h3 class="svc__title">Мойка и деконтаминация</h3>
+            <p class="svc__text">Двухфазная бесконтактная мойка, очистка от битума и металлической пыли, обработка глиной. С этого начинается любая работа: полировать грязный лак нельзя.</p>
+            <dl class="svc__meta"><div><dt>Срок</dt><dd>1 день</dd></div><div><dt>Стоимость</dt><dd>от 6 500 ₽</dd></div></dl>
+          </div>
+          <figure class="svc__img"><img src="img/foam.jpg" alt="Пена на кузове Porsche во время мойки" loading="lazy"></figure>
+        </article>
+
+        <article class="svc">
+          <div class="svc__body">
+            <h3 class="svc__title">Полировка</h3>
+            <p class="svc__text">Замеряем толщину лака на каждой детали и снимаем ровно столько, сколько нужно, чтобы убрать голограммы и паутинку. Глубина цвета возвращается без перекраса.</p>
+            <dl class="svc__meta"><div><dt>Срок</dt><dd>2–3 дня</dd></div><div><dt>Стоимость</dt><dd>от 24 000 ₽</dd></div></dl>
+          </div>
+          <figure class="svc__img"><img src="img/polish.jpg" alt="Мастер полирует чёрный кузов" loading="lazy"></figure>
+        </article>
+
+        <article class="svc">
+          <div class="svc__body">
+            <h3 class="svc__title">Керамика</h3>
+            <p class="svc__text">Твёрдый прозрачный слой поверх лака. Грязь и реагенты держатся хуже, вода уходит каплями, а блеск сохраняется до трёх лет при правильном уходе.</p>
+            <dl class="svc__meta"><div><dt>Срок</dt><dd>3 дня с выдержкой</dd></div><div><dt>Стоимость</dt><dd>от 38 000 ₽</dd></div></dl>
+          </div>
+          <figure class="svc__img"><img src="img/blue.jpg" alt="Отражения на синем глянцевом кузове" loading="lazy"></figure>
+        </article>
+
+        <article class="svc">
+          <div class="svc__body">
+            <h3 class="svc__title">Салон</h3>
+            <p class="svc__text">Кожа, алькантара, потолок и ковры. Чистим составами под каждый материал, кожу питаем и защищаем от трещин и потёртостей.</p>
+            <dl class="svc__meta"><div><dt>Срок</dt><dd>1–2 дня</dd></div><div><dt>Стоимость</dt><dd>от 15 000 ₽</dd></div></dl>
+          </div>
+          <figure class="svc__img"><img src="img/interior911.jpg" alt="Салон Porsche с кожаной отделкой" loading="lazy"></figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Свет ============ -->
+    <section class="light" id="light" aria-labelledby="lightTitle">
+      <div class="lamp" id="lamp">
+        <img class="lamp__base" src="img/fender.jpg" alt="" loading="lazy">
+        <img class="lamp__lit" src="img/fender.jpg" alt="Крыло чёрного автомобиля в свете инспекционной лампы" loading="lazy">
+        <span class="lamp__glow" aria-hidden="true"></span>
+      </div>
+      <div class="light__copy">
+        <h2 class="title" id="lightTitle">Под лампой видно всё</h2>
+        <p>Голограммы, паутинка от щёток автомойки, следы прошлой полировки. Обычный свет их прячет. Мы работаем при 6500 K и показываем вам кузов под лампой до начала работы.</p>
+        <p class="light__hint" id="lampHint">Наведите курсор на крыло. Это наш свет.</p>
+      </div>
+    </section>
+
+    <!-- ============ Галерея ============ -->
+    <section class="gallery" id="gallery" aria-labelledby="galleryTitle">
+      <div class="gallery__pin" id="galleryPin">
+        <div class="gallery__track" id="galleryTrack">
+          <div class="gallery__intro">
+            <h2 class="title" id="galleryTitle">Машины, ради которых мы этим занимаемся</h2>
+            <p>Автомобили, которые хочется рассматривать. Мы держим их уровень на каждой машине, которая заезжает к нам в бокс.</p>
+          </div>
+          <figure class="shot shot--tall"><div class="mask"><img src="img/f-wet.jpg" alt="Красный Ferrari 812 на мокрой брусчатке" loading="lazy"></div><figcaption>Ferrari 812 Superfast</figcaption></figure>
+          <figure class="shot shot--wide"><div class="mask"><img src="img/bentley.jpg" alt="Bentley в тёмном зале" loading="lazy"></div><figcaption>Bentley Flying Spur</figcaption></figure>
+          <figure class="shot shot--tall shot--low"><div class="mask"><img src="img/rolls-open.jpg" alt="Rolls-Royce Dawn с открытым верхом" loading="lazy"></div><figcaption>Rolls-Royce Dawn</figcaption></figure>
+          <figure class="shot shot--wide"><div class="mask"><img src="img/tail911.jpg" alt="Задний фонарь Porsche 911" loading="lazy"></div><figcaption>Porsche 911 Carrera 4S</figcaption></figure>
+          <figure class="shot shot--tall"><div class="mask"><img src="img/laf-bw.jpg" alt="Чёрно-белый кадр Ferrari LaFerrari" loading="lazy"></div><figcaption>Ferrari LaFerrari</figcaption></figure>
+          <figure class="shot shot--tall shot--low"><div class="mask"><img src="img/porsche-it.jpg" alt="Красный Porsche 356 на итальянской площади" loading="lazy"></div><figcaption>Porsche 356</figcaption></figure>
+          <figure class="shot shot--wide"><div class="mask"><img src="img/porsche-snow.jpg" alt="Белый Porsche 911 GT3 в горах" loading="lazy"></div><figcaption>Porsche 911 GT3</figcaption></figure>
+          <figure class="shot shot--tall"><div class="mask"><img src="img/panamera.jpg" alt="Porsche Panamera на закате" loading="lazy"></div><figcaption>Porsche Panamera</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Процесс ============ -->
+    <section class="process" id="process" aria-labelledby="processTitle">
+      <div class="section-head">
+        <h2 class="title" id="processTitle">Как проходит работа</h2>
+        <p>Пять этапов. Цену и срок вы знаете до того, как машина заедет в бокс.</p>
+      </div>
+      <div class="timeline">
+        <span class="timeline__rail"><i id="rail"></i></span>
+        <ol class="timeline__list">
+          <li class="tstep"><span class="tstep__n">01</span><h3>Осмотр</h3><p>Смотрим кузов под лампой, замеряем лак, фотографируем дефекты. Называем цену и срок.</p></li>
+          <li class="tstep"><span class="tstep__n">02</span><h3>Подготовка</h3><p>Мойка, деконтаминация, защита резины и пластика малярной лентой.</p></li>
+          <li class="tstep"><span class="tstep__n">03</span><h3>Полировка</h3><p>От одного до трёх этапов. Каждую деталь проверяем при разном свете.</p></li>
+          <li class="tstep"><span class="tstep__n">04</span><h3>Защита</h3><p>Керамика или воск, затем выдержка в тёплом боксе.</p></li>
+          <li class="tstep"><span class="tstep__n">05</span><h3>Выдача</h3><p>Показываем машину при дневном свете, отдаём фото до и после и памятку по уходу.</p></li>
+        </ol>
+      </div>
+      <figure class="process__wide">
+        <div class="mask"><img src="img/cloth.jpg" alt="Микрофибра на капоте после полировки" loading="lazy"></div>
+      </figure>
+    </section>
+
+    <!-- ============ Стоимость ============ -->
+    <section class="prices" id="prices" aria-labelledby="pricesTitle">
+      <div class="section-head">
+        <h2 class="title" id="pricesTitle">Стоимость</h2>
+        <div class="seg" role="radiogroup" aria-label="Тип кузова">
+          <label><input type="radio" name="body" value="1" checked><span>Седан</span></label>
+          <label><input type="radio" name="body" value="1.2"><span>Кроссовер</span></label>
+          <label><input type="radio" name="body" value="1.4"><span>Внедорожник</span></label>
+          <i class="seg__pill" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <h3>Уход</h3>
+          <p class="plan__lead">Вернуть машине свежесть между сезонами.</p>
+          <p class="plan__price" data-base="9000">от 9 000 ₽</p>
+          <ul>
+            <li>Мойка и деконтаминация</li>
+            <li>Воск на три месяца</li>
+            <li>Стёкла и диски</li>
+            <li>Лёгкая чистка салона</li>
+          </ul>
+          <a href="#booking" class="btn btn--line" data-scroll data-pick="Уход">Выбрать</a>
+        </article>
+
+        <article class="plan">
+          <h3>Восстановление</h3>
+          <p class="plan__lead">Если лак потерял глубину и покрылся паутинкой.</p>
+          <p class="plan__price" data-base="32000">от 32 000 ₽</p>
+          <ul>
+            <li>Всё из пакета «Уход»</li>
+            <li>Двухэтапная полировка</li>
+            <li>Замер лака с отчётом по деталям</li>
+            <li>Защитный силант на полгода</li>
+          </ul>
+          <a href="#booking" class="btn btn--line" data-scroll data-pick="Восстановление">Выбрать</a>
+        </article>
+
+        <article class="plan plan--main">
+          <h3>Ателье</h3>
+          <p class="plan__lead">Полный цикл для новой или особенно ценной машины.</p>
+          <p class="plan__price" data-base="68000">от 68 000 ₽</p>
+          <ul>
+            <li>Всё из «Восстановления»</li>
+            <li>Керамика в два слоя</li>
+            <li>Химчистка и уход за кожей</li>
+            <li>Защита дисков и стёкол</li>
+          </ul>
+          <a href="#booking" class="btn btn--ivory" data-scroll data-pick="Ателье" data-magnetic>Выбрать</a>
+        </article>
+      </div>
+      <p class="prices__note">Точную цену называем после осмотра. Он бесплатный и занимает полчаса.</p>
+    </section>
+
+    <!-- ============ Запись ============ -->
+    <section class="booking" id="booking" aria-labelledby="bookingTitle">
+      <figure class="booking__img"><img src="img/wheel.jpg" alt="Руль Porsche в тёмном салоне" loading="lazy"></figure>
+      <div class="booking__body">
+        <h2 class="title" id="bookingTitle">Запись на осмотр</h2>
+        <p class="booking__lead">Оставьте контакты. Перезвоним в течение часа, предложим время и ответим на вопросы.</p>
+
+        <form class="form" id="bookingForm" novalidate>
+          <label class="field"><span>Автомобиль</span><input type="text" name="car" placeholder="Марка, модель, год" autocomplete="off"></label>
+          <fieldset class="chips">
+            <legend>Что интересует</legend>
+            <label><input type="radio" name="plan" value="Уход"><span>Уход</span></label>
+            <label><input type="radio" name="plan" value="Восстановление"><span>Восстановление</span></label>
+            <label><input type="radio" name="plan" value="Ателье"><span>Ателье</span></label>
+            <label><input type="radio" name="plan" value="Пока не знаю" checked><span>Пока не знаю</span></label>
+          </fieldset>
+          <div class="form__row">
+            <label class="field"><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name"></label>
+            <label class="field"><span>Телефон</span><input type="tel" name="phone" placeholder="+7 900 000-00-00" autocomplete="tel"></label>
+          </div>
+          <button class="btn btn--ivory btn--big" type="submit" data-magnetic>Отправить заявку</button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </form>
+
+        <dl class="contacts">
+          <div><dt>Адрес</dt><dd>Омск, ул. Красный Путь, 120</dd></div>
+          <div><dt>Часы</dt><dd>Ежедневно, 9:00–20:00</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+73812000000">+7 (3812) 00-00-00</a></dd></div>
+          <div><dt>Telegram</dt><dd><a href="https://t.me/assalameu" target="_blank" rel="noopener">@assalameu</a></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__word" aria-hidden="true">Lucido</p>
+    <div class="footer__row">
+      <span>© 2026 Lucido. Демо-проект</span>
+      <a href="#top" data-scroll>Наверх</a>
+      <span>Фото: Unsplash</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
